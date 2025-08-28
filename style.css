@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.projet {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
