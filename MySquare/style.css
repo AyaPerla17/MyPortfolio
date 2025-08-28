@@ -1,0 +1,19 @@
+ #aya {
+            background-color: #ff0000;
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+            transition: all 0.5s ease; /* pour animations douces */
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        select, input, button {
+            margin: 5px;
+            padding: 5px;
+            font-size: 1em;
+        }
+        #taille {
+            margin-top: 10px;
+        }
