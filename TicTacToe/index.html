@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tic-Tac-Toe</h1>
+    <h2 id="turnInfo">Tour de : X</h2>
+
+    <div class="grid">
+        <div class="cell" id="0" onclick="XO(this)"></div>
+        <div class="cell" id="1" onclick="XO(this)"></div>
+        <div class="cell" id="2" onclick="XO(this)"></div>
+        <div class="cell" id="3" onclick="XO(this)"></div>
+        <div class="cell" id="4" onclick="XO(this)"></div>
+        <div class="cell" id="5" onclick="XO(this)"></div>
+        <div class="cell" id="6" onclick="XO(this)"></div>
+        <div class="cell" id="7" onclick="XO(this)"></div>
+        <div class="cell" id="8" onclick="XO(this)"></div>
+    </div>
+
+    <button onclick="resetGame()">Rejouer</button>
+
+    <script src="main.js"></script>
+</body>
+</html>

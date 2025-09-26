@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Détails Produit - Aya Shop</title>
+<link rel="stylesheet" href="ProductsStyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">Aya Shop 🕌 <img src="Maroc/morocco-flag.png" alt="Maroc" class="flag"></div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="cart.html">Panier</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="product-details-container">
+    <div class="product-image-wrapper">
+        <img id="product-image" alt="Produit">
+    </div>
+    <div class="product-info">
+        <h1 id="product-name"></h1>
+        <p id="product-description"></p>
+        <p class="product-price" id="product-price"></p>
+
+        <label for="product-colors">Couleur :</label>
+        <select id="product-colors">
+            <option value="">-- Choisir une couleur --</option>
+        </select>
+
+        <label for="product-sizes">Taille :</label>
+        <select id="product-sizes">
+            <option value="">-- Choisir une taille --</option>
+        </select>
+
+        <button id="add-to-cart">Ajouter au panier</button>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

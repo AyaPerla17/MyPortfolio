@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Aya Shop</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cairo:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Aya Shop 🕌</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produits</a>
+        <a href="cart.html">Panier</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section id="contact" class="contact-section">
+    <h2>Contactez-nous</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Aya Shop - Tous droits réservés</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Merci pour votre message !');
+    this.reset();
+});
+</script>
+
+</body>
+</html>

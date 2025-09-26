@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panier - Aya Shop</title>
+<link rel="stylesheet" href="CartStyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Aya Shop 🕌</div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="cart.html" class="active">Panier</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="cart-container">
+    <h1>Votre Panier</h1>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+        <p>Articles : <span id="cart-count">0</span></p>
+        <p>Total : <span id="total-price">0</span> €</p>
+        <button id="checkout">Commander</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Aya Shop - Tous droits réservés</p>
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>

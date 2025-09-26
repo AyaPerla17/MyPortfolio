@@ -1,44 +1,367 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio Aya</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Aya - Développeuse Web Junior</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <h1>Aya Ben</h1>
-        <p>Développeuse Web</p>
-    </header>
 
-    <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p>Je suis passionnée par le développement web et j'aime créer des projets interactifs.</p>
-    </section>
-
-    <section id="projets">
-    <h2>Mes projets</h2>
-    
-    <div class="projet">
-        <h3>Tic-Tac-Toe</h3>
-        <p>Jeu interactif en HTML, CSS et JS.</p>
-        <a href="XO/index.html" target="_blank">Voir le projet XO</a>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-secondary" href="#">Aya Dev 🌸</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-secondary" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" href="#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" href="#Projet">Projets</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" href="#career">Parcours</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <div class="projet">
-        <h3>Carré interactif</h3>
-        <p>Changer la couleur, la taille et cacher/afficher un carré.</p>
-        <a href="MySquare/index.html" target="_blank">Voir le projet</a>
-    </div>
+<header class="text-center d-flex flex-column justify-content-center align-items-center vh-100">
+  <h1 class="fw-bold text-dark">🌸 Bonjour, je suis <span class="text-pink">Aya</span></h1>
+  <p class="lead text-muted">Développeuse Web Junior passionnée par la création d’expériences digitales💻✨</p>
+  <a href="#Projet" class="btn btn-dark btn-lg mt-3">Voir mes projets</a>
+</header>
+
+<section id="about" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="fw-bold text-dark">
+      <i class="fas fa-user-circle me-2 text-pink"></i> À propos
+    </h2>
+    <p class="lead text-muted mt-3">
+      Je suis Aya Benmira, une développeuse web passionnée.
+       J’aime créer des interfaces élégantes et interactives qui allient design et performance. Curieuse et motivée,
+       j’explore constamment de nouvelles technologies pour concevoir des expériences digitales modernes et innovantes.
+    </p>
+  </div>
 </section>
 
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">💻 Mes Compétences</h2>
+    <div class="row text-center">
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : aya@example.com</p>
-        <p>LinkedIn : <a href="https://linkedin.com/in/aya" target="_blank">Mon profil</a></p>
-        <p>GitHub : <a href="https://github.com/aya" target="_blank">Mes projets</a></p>
+      <!-- Frontend -->
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-html5 fa-3x text-danger"></i>
+        <h6>HTML5</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-css3-alt fa-3x text-primary"></i>
+        <h6>CSS3</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-js-square fa-3x text-warning"></i>
+        <h6>JavaScript</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-react fa-3x text-info"></i>
+        <h6>React</h6>
+      </div>
+
+      <!-- Backend -->
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-php fa-3x text-indigo"></i>
+        <h6>PHP</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-laravel fa-3x text-danger"></i>
+        <h6>Laravel</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-python fa-3x text-success"></i>
+        <h6>Python</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fas fa-database fa-3x text-secondary"></i>
+        <h6>MySQL / NoSQL</h6>
+      </div>
+
+      <!-- CMS & Tools -->
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-wordpress fa-3x text-primary"></i>
+        <h6>WordPress</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-bootstrap fa-3x text-purple"></i>
+        <h6>Bootstrap</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fab fa-github fa-3x text-dark"></i>
+        <h6>GitHub</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fas fa-project-diagram fa-3x text-pink"></i>
+        <h6>Agile / Scrum</h6>
+      </div>
+
+      <!-- Bureautique -->
+      <div class="col-md-3 mb-4">
+        <i class="fas fa-file-word fa-3x text-primary"></i>
+        <h6>Microsoft Word</h6>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="fas fa-file-excel fa-3x text-success"></i>
+        <h6>Microsoft Excel</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Projet" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">
+      <i class="fas fa-laptop-code me-2 text-pink"></i> Projets Laravel - Gestion Universitaire
+    </h2>
+    <p class="text-center mb-5" style="max-width:800px; margin:auto; font-size:1rem; color:#555;">
+      Découvrez mon projet phare : une plateforme web complète de gestion universitaire,
+      conçue pour faciliter la communication entre étudiants, administrateurs et superviseurs,
+      tout en automatisant les processus administratifs. Fonctionnalités principales :
+      soumission de demandes et réclamations, suivi en temps réel, notifications intelligentes,
+      gestion des administrateurs et supervision globale.
+    </p>
+
+    <div class="row justify-content-center">
+
+      <!-- Étudiants -->
+      <div class="col-md-3 text-center">
+        <h4><i class="fas fa-user-graduate me-2 text-pink"></i> Étudiants</h4>
+        <div class="slider-wrapper-vertical">
+          <button class="slider-btn prev" onclick="prevSlide('etudiants')">&#9650;</button>
+          <div class="slider-vertical" id="etudiants">
+            <div class="slide"><img src="images/Etudiants/register.png"><p class="slide-title">Register Étudiant</p><p class="slide-desc">Inscription pour les nouveaux étudiants.</p></div>
+            <div class="slide"><img src="images/Etudiants/login.png"><p class="slide-title">Login Étudiant</p><p class="slide-desc">Connexion unique pour tous les étudiants.</p></div>
+            <div class="slide"><img src="images/Etudiants/dashboard_etudiant.png"><p class="slide-title">Dashboard Étudiant</p><p class="slide-desc"> Point central pour gérer toutes vos démarches universitaires.</p></div>
+            <div class="slide"><img src="images/Etudiants/formulaire_demande.png"><p class="slide-title">Formulaire Demande</p><p class="slide-desc">Remplir les demandes selon le type d’étudiant.</p></div>
+            <div class="slide"><img src="images/Etudiants/formulaire_reclamation.png"><p class="slide-title">Formulaire Réclamation</p><p class="slide-desc">Passer une réclamation avec date limite.</p></div>
+            <div class="slide"><img src="images/Etudiants/notification_demande.png"><p class="slide-title">Notification Demande</p><p class="slide-desc">Notifications sur les mises à jour des demandes.</p></div>
+            <div class="slide"><img src="images/Etudiants/notification_reclamation.png"><p class="slide-title">Notification Réclamation</p><p class="slide-desc">Notifications sur les mises à jour des réclamations.</p></div>
+            <div class="slide"><img src="images/Etudiants/passer_reclamation_date_limite.png"><p class="slide-title">Passer Réclamation Date Limite</p><p class="slide-desc">Réclamations soumises avant la deadline.</p></div>
+            <div class="slide"><img src="images/Etudiants/suivi_demande.png"><p class="slide-title">Suivi Demandes</p><p class="slide-desc">Suivi des demandes avec statut.</p></div>
+            <div class="slide"><img src="images/Etudiants/suivi_notifications_demandes_etudiant.png"><p class="slide-title">Suivi Notifications Demandes</p><p class="slide-desc">Voir les notifications et suivi pour chaque demande.</p></div>
+            <div class="slide"><img src="images/Etudiants/suivi_notifications_reclamations_etudiant.png"><p class="slide-title">Suivi Notifications Réclamations</p><p class="slide-desc">Voir les notifications et suivi pour chaque réclamation.</p></div>
+            <div class="slide"><img src="images/Etudiants/suivi_reclamation.png"><p class="slide-title">Suivi Réclamations</p><p class="slide-desc">Suivi des réclamations avec statut .</p></div>
+            <div class="slide"><img src="images/Etudiants/type_demandes_etudiant_normal.png"><p class="slide-title">Demandes Étudiant Normal</p><p class="slide-desc">Liste des demandes accessibles aux étudiants normaux.</p></div>
+            <div class="slide"><img src="images/Etudiants/type_demandes_medecin_resident.png"><p class="slide-title">Demandes Médecin Résident</p><p class="slide-desc">Liste des demandes accessibles pour médecins résidents.</p></div>
+            <div class="slide"><img src="images/Etudiants/type_demandes_medecin_interne.png"><p class="slide-title">Demandes Médecin Interne</p><p class="slide-desc">Liste des demandes accessibles pour médecins internes.</p></div>
+          </div>
+          <button class="slider-btn next" onclick="nextSlide('etudiants')">&#9660;</button>
+        </div>
+      </div>
+
+      <!-- Administrateurs -->
+      <div class="col-md-3 text-center">
+        <h4><i class="fas fa-user-shield me-2 text-pink"></i> Administrateurs</h4>
+        <div class="slider-wrapper-vertical">
+          <button class="slider-btn prev" onclick="prevSlide('admins')">&#9650;</button>
+          <div class="slider-vertical" id="admins">
+            <div class="slide"><img src="images/Administrateurs/Gestion-admin-reclamations.png"><p class="slide-title">Gestion Réclamations</p><p class="slide-desc">Interface pour gérer et traiter les réclamations selon le rôle de chaque administrateur.</p></div>
+            <div class="slide"><img src="images/Administrateurs/Gestion-demande-admin-scolarité.png"><p class="slide-title">Gestion Scolarité</p><p class="slide-desc">Gestion des demandes liées à la scolarité. Chaque administrateur a un rôle précis pour suivre et valider ces demandes.</p></div>
+            <div class="slide"><img src="images/Administrateurs/Gestion-demandes-admin-interne.png"><p class="slide-title">Gestion Médecins Internes</p><p class="slide-desc">Suivi des demandes spécifiques aux médecins internes, avec validation selon le rôle attribué à l’admin.</p></div>
+            <div class="slide"><img src="images/Administrateurs/Gestion-demandes-admin-relevés-notes.png"><p class="slide-title">Gestion Relevés de Notes</p><p class="slide-desc">Interface pour traiter les demandes de relevés de notes, chaque administrateur agissant selon son rôle défini.</p></div>
+            <div class="slide"><img src="images/Administrateurs/Gestion-demandes-admin-résident.png"><p class="slide-title">Gestion Médecins Résidents</p><p class="slide-desc">Suivi des demandes pour les médecins résidents, accessible uniquement selon le rôle de l’admin.</p></div>
+            <div class="slide"><img src="images/Administrateurs/Gestion-demandes-admin-stages.png"><p class="slide-title">Gestion Stages</p><p class="slide-desc">Gestion des demandes liées aux stages étudiants. Chaque administrateur dispose de permissions spécifiques.</p></div>
+            <div class="slide"><img src="images/Administrateurs/modification_statut_demande.png"><p class="slide-title">Modification Statut Demande</p><p class="slide-desc">Permet de changer le statut des demandes selon les droits et le rôle de l’administrateur.</p></div>
+            <div class="slide"><img src="images/Administrateurs/modification_statut_reclamation.png"><p class="slide-title">Modification Statut Réclamation</p><p class="slide-desc">Permet de changer le statut des réclamations, chaque admin suivant son rôle.</p></div>
+            <div class="slide"><img src="images/Administrateurs/notif_retard_admin.png"><p class="slide-title">Notification Retard Admin</p><p class="slide-desc">Notifications envoyées aux administrateurs lorsqu’une action dépasse le délai défini par le superviseur.</p></div>
+            <div class="slide"><img src="images/Administrateurs/recherche_code_apoge.png"><p class="slide-title">Recherche Code Apogée</p><p class="slide-desc">Recherche rapide d’une demande ou réclamation via le code Apogée.</p></div>
+            <div class="slide"><img src="images/Administrateurs/ajouter_admin_formulaire.png"><p class="slide-title">Ajouter Admin</p><p class="slide-desc">Formulaire pour ajouter un nouvel administrateur avec attribution d’un rôle spécifique.</p></div>
+            <div class="slide"><img src="images/Administrateurs/suppression_element.png"><p class="slide-title">Suppression Élément</p><p class="slide-desc">Supprimer une demande, une réclamation selon le rôle et les permissions.</p></div>
+
+          </div>
+          <button class="slider-btn next" onclick="nextSlide('admins')">&#9660;</button>
+        </div>
+      </div>
+
+      <!-- Superviseurs -->
+      <div class="col-md-3 text-center">
+        <h4><i class="fas fa-user-tie me-2 text-pink"></i> Superviseurs</h4>
+        <div class="slider-wrapper-vertical">
+          <button class="slider-btn prev" onclick="prevSlide('superviseurs')">&#9650;</button>
+          <div class="slider-vertical" id="superviseurs">
+            <div class="slide"><img src="images/Superviseurs/dashboard_superviseur.png"><p class="slide-title">Dashboard Superviseur</p><p class="slide-desc">Tableau de bord global pour suivre toutes les demandes et réclamations.</p></div>
+            <div class="slide"><img src="images/Superviseurs/details_admin_superviseur.png"><p class="slide-title">Détails Admin</p><p class="slide-desc">Informations détaillées pour chaque admin avec option de notifier ceux en retard.</p></div>
+            <div class="slide"><img src="images/Superviseurs/liste_admins_superviseur.png"><p class="slide-title">Liste des Admins</p><p class="slide-desc">Voir tous les administrateurs et leurs rôles respectifs.</p></div>
+            <div class="slide"><img src="images/Superviseurs/modification_deadline_reclamation.png"><p class="slide-title">Modifier Deadline Réclamation</p><p class="slide-desc">Permet de changer la date limite des réclamations.</p></div>
+            <div class="slide"><img src="images/Superviseurs/modifier_admin_superviseur.png"><p class="slide-title">Modifier Admin</p><p class="slide-desc">Modifier les informations et le rôle d’un administrateur.</p></div>
+          </div>
+          <button class="slider-btn next" onclick="nextSlide('superviseurs')">&#9660;</button>
+        </div>
+      </div>
+      <a href="https://github.com/AyaPerla17/E-services-fmp" target="_blank" 
+        class="btn btn-outline-dark btn-sm mt-3">
+        <i class="fab fa-github"></i> Voir le code GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section id="Projets" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5"><i class="fas fa-lightbulb me-2 text-pink"></i> Autres petits projets</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h5 class="fw-bold mb-3"><i class="fas fa-store me-2 text-pink"></i> Aya Shop - E-Commerce Marocain</h5>
+          <img src="images/MiniE-commerce.png" alt="Aya Shop">
+          <p>Mini boutique en ligne mettant en avant l'artisanat marocain : vêtements traditionnels, tapis, accessoires et décorations.</p>
+          <a href="MiniE-commerce/index.html" target="_blank"><i class="fas fa-eye me-1"></i>Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+          <h5 class="fw-bold mb-3"><i class="fas fa-calculator me-2 text-pink"></i> Calculatrice</h5>
+          <img src="images/calculator.png" alt="Calculatrice Professionnelle">
+          <p>Calculatrice professionnelle simple et efficace avec support des pourcentages et opérateurs classiques.</p>
+          <a href="Calculator/index.html" target="_blank"><i class="fas fa-eye me-1"></i>Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+          <h5 class="fw-bold mb-3"><i class="fas fa-list-check me-2 text-pink"></i> To-Do List</h5>
+          <img src="images/todolist.png" alt="To-Do List">
+          <p>Application pratique pour gérer ses tâches quotidiennes : à faire, en cours et terminées.</p>
+          <a href="ToDoList/index.html" target="_blank"><i class="fas fa-eye me-1"></i>Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+          <h5 class="fw-bold mb-3"><i class="fas fa-stopwatch me-2 text-pink"></i> Chronomètre</h5>
+          <img src="images/stopwatch.png" alt="Chronomètre JS">
+          <p>Application en JavaScript pour mesurer le temps avec fonctionnalités d’arrêt, reset et sauvegarde des temps.</p>
+          <a href="Stopwatch/index.html" target="_blank"><i class="fas fa-eye me-1"></i>Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+          <h5 class="fw-bold mb-3"><i class="fas fa-gamepad me-2 text-pink"></i> Tic-Tac-Toe</h5>
+          <img src="images/TicTacToe.png" alt="Tic-Tac-Toe Game">
+          <p>Jeu interactif pour tester mes compétences en JavaScript, avec animation et logique de victoire.</p>
+          <a href="TicTacToe/index.html" target="_blank"><i class="fas fa-eye me-1"></i>Voir le jeu</a>
+        </div>
+
+        <div class="project-card text-center" style="background:#f8f9fa; color:#555; position:relative; overflow:hidden;">
+          <h5 class="fw-bold mb-3"><i class="fas fa-rocket me-2 text-pink"></i> Projets à venir</h5>
+          <img src="images/coming.jpg" alt="Projets futurs" style="height:180px; object-fit:cover; border-radius:8px; margin-bottom:1rem;">
+          <p style="font-weight:500; font-size:0.95rem; margin-bottom:0.5rem;">
+            De nouveaux projets passionnants arrivent très bientôt ! Préparez-vous à découvrir des expériences interactives et innovantes.
+          </p>
+          <p style="margin-top:10px; font-style:italic; color:#ff5ca2;">
+            Restez connectés pour ne rien manquer ! ⏳
+          </p>
+          <div style="position:absolute; top:10px; right:10px; font-size:1.5rem; animation: bounce 1.5s infinite;">
+            ⏳
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+    </style>
+  </section>
+
+  <section id="career" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold text-dark"><i class="fas fa-graduation-cap me-2 text-pink"></i>Mon parcours</h2>
+      <div class="timeline mt-5">
+
+        <div class="timeline-item">
+          <h5><i class="fas fa-book me-2 text-pink"></i>Baccalauréat Sciences Physiques</h5>
+          <span class="text-muted">2022</span>
+          <p>Diplômée en sciences physiques, première étape de mon parcours académique.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5><i class="fas fa-laptop-code me-2 text-pink"></i>Technicien spécialisé en Développement Informatique – Full Stack</h5>
+          <span class="text-muted">2022 – 2024</span>
+          <p>Formation diplômante axée sur le développement web et la gestion de bases de données.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5><i class="fas fa-building me-2 text-pink"></i>Stage – Faculté de Médecine et Pharmacie d’Oujda</h5>
+          <span class="text-muted">2024</span>
+          <p>Création d’un site web permettant aux étudiants et aux administrateurs de gérer efficacement les réclamations et demandes, avec Laravel et MySQL.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5><i class="fas fa-project-diagram me-2 text-pink"></i>Projets personnels</h5>
+          <span class="text-muted">2025</span>
+          <p>Réalisation de projets variés : <strong>portfolio professionnel</strong>, <strong>mini-jeux en React</strong>, et plusieurs <strong>applications web</strong>.</p>
+        </div>
+
+      </div>
+
+      <section id="cv" class="py-5 bg-light">
+        <div class="container text-center">
+          <h3 class="fw-bold mb-4"><i class="fas fa-file-pdf me-2 text-pink"></i>Mon CV</h3>
+          <p class="mb-4" style="color:#555; max-width:600px; margin:auto; font-size:1rem;">
+            Découvrez mon parcours complet, mes compétences techniques et mes projets professionnels.
+          </p>
+
+          <div class="cv-card position-relative d-inline-block mb-4" style="max-width:400px; border-radius:16px; overflow:hidden; box-shadow:0 12px 25px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <img src="images/MonCv.png" alt="Capture CV Aya" style="width:100%; height:auto; display:block; transition: transform 0.3s ease;">
+          </div>
+
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="Mon CV.pdf" target="_blank" class="btn btn-outline-pink fw-bold" 
+              style="border-color:#ff5ca2; color:#ff5ca2; border-radius:25px; padding:10px 25px; transition: all 0.3s ease;">
+              <i class="fas fa-eye me-1"></i>Consulter
+            </a>
+            <a href="Mon CV.pdf" download class="btn btn-pink fw-bold" 
+              style="background-color:#ff5ca2; color:#fff; border-radius:25px; padding:10px 25px; transition: all 0.3s ease;">
+              <i class="fas fa-download me-1"></i>Télécharger
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="contact" class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4"><i class="fas fa-address-book me-2 text-pink"></i>Contactez-moi</h2>
+        <p class="mb-4" style="color:#555; max-width:600px; margin:auto;">
+          Vous pouvez me retrouver sur mes réseaux ou m'envoyer un e-mail directement.
+        </p>
+
+        <div class="d-flex justify-content-center gap-4">
+          <a href="https://www.linkedin.com/in/aya-benmira-b40449279/" target="_blank" class="linkedin text-decoration-none fs-3 text-primary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/AyaPerla17" target="_blank" class="text-decoration-none text-dark fs-3">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="mailto:benmira316@gmail.com" class="text-decoration-none text-danger fs-3">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <p class="mt-3 text-muted" style="font-size:0.9rem;">
+          © 2025 Aya Benmira - Tous droits réservés
+        </p>
+      </div>
     </section>
+  </section>
+  <script src="index.js"></script>
 </body>
 </html>
+
+
+
